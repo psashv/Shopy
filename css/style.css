@@ -174,3 +174,32 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* products styles */
+
+.product {
+  background-color: white;
+  padding-bottom: 124px;
+}
+
+.product .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.product__info {
+  width: 615px;
+}
+
+/* catalog styles */
+
+.filter > div {
+  box-sizing: border-box;
+  width: 268px;
+  height: 302px;
+  padding: 40px;
+
+  background-color: white;
+}
