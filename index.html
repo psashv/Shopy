@@ -10,7 +10,7 @@
 <body>
   <header class="site-header">
     <!-- lines ::after&before ez -->
-    <div>
+    <div class="header-top">
       <div>
         <div>info@shoppy.com</div>
         <div>453 - 5553 - 996</div>
@@ -22,18 +22,18 @@
         <a href="instagram.com">i</a>
       </div>
     </div>
-    <div>
+    <div class="header-bottom">
       <div>
         <a href="index.html">
           shopy shope any where
         </a>
-        <div>
+        <nav>
           <a href="index.html">Home</a>
           <a href="catalog.html">Products</a>
           <a href="#">Hot Deals</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
-        </div>
+        </nav>
       </div>
       <div>
         <a href="">search
@@ -46,19 +46,18 @@
   </header>
   <main class="page-main">
     <section class="featured">
-      <!-- so we have img on right side -->
-      <h2 class="visually-hidden">Featured products</h2>
-      <div>
+      <!-- <h2 class="visually-hidden">Featured products</h2> -->
+      <div class="container">
         <div>
           <!-- slider -->
         </div>
-        <div>
+        <div class="wrapper">
           <h3>full winter kit</h3>
           <p>Half Jacket + Skiny Trousers + Boot leather</p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          <div>
+          <div class="featured__price">
             <div>Price : 120$</div>
-            <div>Order Now</div>
+            <a href="product.html">Order Now</a>
           </div>
         </div>
       </div>
@@ -67,33 +66,33 @@
       <h2>new arrivals</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
       <div>
-        <div>
-          <div>
+        <div class="wrapper">
+          <div class="item">
             <img src="img/.png">
             <p>Reebok Track Jacket</p>
             <span>100$</span>
             <!-- hehe also can add hover effect but not right now -->
           </div>
-          <div>
+          <div class="item">
             <img src="img/.png">
             <p>Reebok Track Jacket</p>
             <span>100$</span>
           </div>
-          <div>
+          <div class="item">
             <img src="img/.png">
             <p>Reebok Track Jacket</p>
             <span>100$</span>
           </div>
-          <div>
+          <div class="item">
             <img src="img/.png">
             <p>Reebok Track Jacket</p>
             <span>100$</span>
           </div>
         </div>
-        <a href="#">. . .</a>
+        <a href="#" class="more"><span></span></a>
       </div>
     </section>
-    <div>
+    <div class="hot-sale">
       <a href="product.html" class="sale">
         <!-- img -->
         <div>
@@ -114,8 +113,19 @@
     <section class="best-sales">
       <h2>best sales</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-      <div>
-        <div>
+      <div class="wrapper">
+        <div class="item">
+          <img src="img/best-sales.png" width="89" height="90">
+          <!-- wall -->
+          <div>
+            <p>Reebok Track Jacket</p>
+            <div>
+              <div>rating</div>
+              <span>100$</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
           <!-- img -->
           <!-- wall -->
           <div>
@@ -126,18 +136,7 @@
             </div>
           </div>
         </div>
-        <div>
-          <!-- img -->
-          <!-- wall -->
-          <div>
-            <p>Reebok Track Jacket</p>
-            <div>
-              <div>rating</div>
-              <span>100$</span>
-            </div>
-          </div>
-        </div>
-        <div>
+        <div class="item">
           <!-- img -->
           <!-- wall -->
           <div>
@@ -162,24 +161,26 @@
     </section>
   </main>
   <footer class="site-footer">
-    <div>
-      <a href="index.html">
-        shopy shope any where
-      </a>
-      <p>shopy c 2015 .your copy right <a href="#">here</a></p>
-    </div>
-    <div>
-      <!-- that part doesn't matter right now -->
-      <!-- ul>li*8>a[href="#"] -->
-      <div>
-        <h3>Payment Methods</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+    <div class="wrapper">
+      <div class="footer__left">
+        <a href="index.html">
+          shopy shope any where
+        </a>
+        <p>shopy c 2015 .your copy right <a href="#">here</a></p>
+      </div>
+      <div class="footer__right">
+        <!-- that part doesn't matter right now -->
+        <!-- ul>li*8>a[href="#"] -->
+        <div class="footer__payment">
+          <h3>Payment Methods</h3>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>

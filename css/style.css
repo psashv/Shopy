@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(244, 246, 248);
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1170px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  background-color: white;
+}
+
+.more span {
+  width: 35px;
+  height: 8px;
+
+  background: url("../img/Dots.png")  no-repeat;
+}
+
+.site-header {
+  background-color: white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  min-height: 60px;
+  margin: 0 auto;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  min-height: 120px;
+  margin: 0 auto;
+}
+
+.featured {
+  width: 1540px;
+  margin: 0 auto;
+
+  background: url("../img/Img2.png") right no-repeat;
+}
+
+.featured .container {
+  display: flex;
+  width: 1170px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+.featured__price {
+  display: flex;
+}
+
+.new-arrivals {
+  margin-bottom: 119px;
+}
+
+.new-arrivals h2 {
+  text-align: center;
+}
+
+.new-arrivals > p {
+  text-align: center;
+}
+
+.new-arrivals .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.new-arrivals .item {
+  width: 270px;
+  height: 365px;
+
+  background-color: white;
+}
+
+.hot-sale {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  max-height: 100px;
+  margin: 0 auto;
+}
+
+.sale {
+  display: flex;
+  width: 670px;
+  height: 100px;
+  padding-left: 200px;
+  box-sizing: border-box;
+
+  background: white url("../img/Title.png") no-repeat;
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 470px;
+  height: 100px;
+
+  background-color: white;
+}
+
+.best-sales h2 {
+  text-align: center;
+}
+
+.best-sales > p {
+  text-align: center;
+}
+
+.best-sales .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.best-sales .item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 370px;
+  height: 160px;
+  padding: 0 30px;
+
+  background-color: white;
+}
+
+.join-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 1170px;
+  min-height: 123px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 122px;
+  padding: 0 42px;
+
+  background-color: white;
+}
+
+.site-footer {
+  background-color: white;
+}
+
+.site-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  min-height: 250px;
+  margin: 0 auto;
+}
+
+.footer__right {
+  display: flex;
+  align-items: center;
+}
