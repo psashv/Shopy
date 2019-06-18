@@ -26,6 +26,24 @@
   font-style: italic;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -60,9 +78,25 @@ body {
   background-color: white;
 }
 
+.header-top::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: -185px;
+
+  width: 1540px;
+  height: 1px;
+  
+  background-color: #e6e8eb;
+  opacity: 0.5;
+}
+
 .header-top {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1170px;
   min-height: 60px;
   margin: 0 auto;
@@ -70,17 +104,86 @@ body {
   font-size: 12px;
 }
 
-.header-bottom {
+.header__info {
+  display: flex;
+}
+
+.header__info .text1 {
+  margin-right: 19px;
+  padding-left: 27px;
+
+  background: url("../img/Mail\ Ico\ .png") no-repeat;
+}
+
+.header__info .text2 {
+  padding-left: 22px;
+
+  background: url("../img/Phone\ Ico.png") no-repeat;
+}
+
+.header__socials {
   display: flex;
   justify-content: space-between;
+  width: 98px;
+}
+
+.header__socials a:hover path {
+  fill: #ff5912;
+}
+
+.header-bottom::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: -185px;
+
+  width: 1540px;
+  height: 1px;
+  
+  background-color: #e6e8eb;
+  opacity: 0.5;
+}
+
+.header-bottom {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1170px;
   min-height: 120px;
   margin: 0 auto;
 }
 
+.header-bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+}
+
 .header__nav a {
+  margin-right: 39px;
+
   color: #3c4751;
   text-decoration: none;
+}
+
+.header__nav a:last-child {
+  margin-right: 0;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 128px;
+
+  font-size: 0;
+}
+
+.header__icons .counter {
+  margin-bottom: 15px;
 }
 
 .featured {
@@ -93,6 +196,7 @@ body {
 
 .featured .container {
   display: flex;
+  align-items: center;
   width: 1170px;
   height: 650px;
   margin: 0 auto;
