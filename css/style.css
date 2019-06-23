@@ -112,13 +112,13 @@ body {
   margin-right: 19px;
   padding-left: 27px;
 
-  background: url("../img/Mail\ Ico\ .png") no-repeat;
+  background: url("../img/MailIco.png") no-repeat;
 }
 
 .header__info .text2 {
   padding-left: 22px;
 
-  background: url("../img/Phone\ Ico.png") no-repeat;
+  background: url("../img/PhoneIco.png") no-repeat;
 }
 
 .header__socials {
@@ -288,7 +288,7 @@ body {
   text-decoration: none;
   color: #ff5912;
 
-  background: url("../img/Cart\ Ico\ .png") no-repeat;
+  background: url("../img/CartIco.png") no-repeat;
 }
 
 .new-arrivals {
@@ -539,7 +539,7 @@ body {
   font-weight: 700;
   color: #ff5912;
 
-  background: url("../img/Add\ To\ Cart\ Ico.png") 0 8px no-repeat;
+  background: url("../img/AddToCartIco.png") 0 8px no-repeat;
 }
 
 .hot-sale__price sub {
@@ -684,7 +684,7 @@ body {
   font-size: 16px;
   color: #ff5912;
 
-  background: url("../img/Add\ To\ Cart\ Ico.png") no-repeat;
+  background: url("../img/AddToCartIco.png") no-repeat;
 }
 
 .join-us {
@@ -738,7 +738,7 @@ input[type="email"] {
   font-style: italic;
   color: #7c8791;
 
-  background: url("../img/Mail\ Ico.png") 0 7px no-repeat;
+  background: url("../img/MailIco.png") 0 7px no-repeat;
 }
 
 input[type="submit"] {
@@ -1052,7 +1052,7 @@ input[type="submit"] {
   z-index: -1;
 }
 
-.filter__radio div {
+.filter__radio span {
   position: relative;
   
   padding-left: 28px;
@@ -1063,8 +1063,8 @@ input[type="submit"] {
   letter-spacing: 0.8px;
 }
 
-.filter__radio div::before,
-.filter__radio div::after {
+.filter__radio span::before,
+.filter__radio span::after {
   content: '';
   position: absolute;
   left: 0;
@@ -1075,19 +1075,19 @@ input[type="submit"] {
   height: 13px;
 }
 
-.filter__radio div::before {
+.filter__radio span::before {
   background: url("../img/check_box.png") no-repeat;
 }
 
-.filter__radio div::after {
+.filter__radio span::after {
   background: url("../img/Check_Box_2.png") no-repeat;
 }
 
-.filter__radio input:checked + div::before {
+.filter__radio input:checked + span::before {
   z-index: 1;
 }
 
-.filter__radio input:checked:disabled + div::after {
+.filter__radio input:checked:disabled + span::after {
   z-index: -1;
 }
 
